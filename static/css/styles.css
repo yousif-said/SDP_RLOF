@@ -1,0 +1,145 @@
+/* general styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+
+header {
+  background-color: #002855; /* UCONN blue color */
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/*flex container for input and output boxes */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/*input output boxes*/
+.box {
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+  font-size: 1.2em;
+  color: #002855;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  background-color: #f9f9f9;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #004b8d;
+}
+
+
+button {
+  background-color: #002855;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004b8d;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.toggle label {
+  margin: 0 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+.toggle input {
+  margin-right: 5px;
+}
+
+.feedback-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.feedback-buttons .yes {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.feedback-buttons .no {
+  background-color: #F44336;
+  color: white;
+}
+
+.feedback-buttons button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
