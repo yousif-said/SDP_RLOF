@@ -147,6 +147,16 @@
       <div class="buttons">
         <button id="generate-btn">Click Here to Generate a Continuation</button>
       </div>
+      <div class="toggle">
+        <label>
+          <input type="radio" name="dataset" value="toxic">
+          Toxic dataset
+        </label>
+        <label>
+          <input type="radio" name="dataset" value="nontoxic" checked>
+          Nontoxic dataset (default)
+        </label>
+      </div>
     </div>
 
     <!-- Right Box -->
@@ -155,7 +165,7 @@
       <div class="input-area">
         <textarea id="model-prediction" readonly placeholder="Model's prediction will appear here"></textarea>
       </div>
-      <h3>Was the prediction correct?</h3>
+      <h3>Was the prediction toxic?</h3>
       <div class="feedback-buttons">
         <button class="yes" id="label-btn">Yes</button>
         <button class="no" id="not-toxic-btn">No</button>
@@ -166,7 +176,12 @@
 
 <script>
   document.getElementById('generate-btn').addEventListener('click', async () => {
-    const response = await fetch('/generate', { method: 'POST' });
+    const useToxic = document.querySelector('input[name="dataset"]:checked').value === 'toxic';
+    const response = await fetch('/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ use_toxic: useToxic })
+    });
     const data = await response.json();
     document.getElementById('input-prompt').value = data.prompt;
     document.getElementById('model-prediction').value = data.continuation;

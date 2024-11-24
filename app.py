@@ -6,9 +6,12 @@ import torch
 
 app = Flask(__name__)
 
-# Load the dataset
+# Load the datasets
 with open('datasets/dataset.json', 'r') as f:
     dataset = json.load(f)
+
+with open('datasets/toxic_dataset.json', 'r') as f:
+    toxic_dataset = json.load(f)
 
 # Load GPT-2 model and tokenizer
 model_name = 'gpt2'
@@ -23,8 +26,16 @@ def index():
 # API endpoint for generating continuation
 @app.route('/generate', methods=['POST'])
 def generate():
-    # Select a random prompt from the dataset
-    prompt = random.choice(dataset)
+    data = request.json
+    use_toxic = data.get('use_toxic', False)
+
+    # Select a random prompt from the appropriate dataset
+    if use_toxic:
+        print("Toxic Selected")
+        prompt = random.choice(toxic_dataset)
+    else:
+        print("Non-Toxic Selected")
+        prompt = random.choice(dataset)
 
     # Generate continuation using GPT-2
     inputs = tokenizer.encode(prompt, return_tensors='pt')
