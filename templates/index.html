@@ -142,41 +142,60 @@
     <div class="box">
       <h2>Input Prompt</h2>
       <div class="input-area">
-        <textarea placeholder="Type your prompt here"></textarea>
+        <textarea id="input-prompt" readonly></textarea>
       </div>
       <div class="buttons">
-        <button>Click Here to Generate a Continuation</button>
-      </div>
-      <div class="toggle">
-        <label>
-          <input type="radio" name="continuation" value="toxic">
-          Toxic continuation
-        </label>
-        <label>
-          <input type="radio" name="continuation" value="nontoxic" checked>
-          Nontoxic (default) continuation
-        </label>
+        <button id="generate-btn">Click Here to Generate a Continuation</button>
       </div>
     </div>
 
-    <!--right Box -->
+    <!-- Right Box -->
     <div class="box">
       <h2>Prediction By Model</h2>
       <div class="input-area">
-        <textarea readonly placeholder="Model's prediction will appear here"></textarea>
+        <textarea id="model-prediction" readonly placeholder="Model's prediction will appear here"></textarea>
       </div>
       <h3>Was the prediction correct?</h3>
       <div class="feedback-buttons">
-        <button class="yes">Yes</button>
-        <button class="no">No</button>
+        <button class="yes" id="label-btn">Yes</button>
+        <button class="no" id="not-toxic-btn">No</button>
       </div>
     </div>
   </div>
 </main>
 
-<!--linking to the JavaScript file -->
-<script src="js/script.js"></script>
+<script>
+  document.getElementById('generate-btn').addEventListener('click', async () => {
+    const response = await fetch('/generate', { method: 'POST' });
+    const data = await response.json();
+    document.getElementById('input-prompt').value = data.prompt;
+    document.getElementById('model-prediction').value = data.continuation;
+    document.getElementById('label-btn').style.display = 'inline';
+    document.getElementById('not-toxic-btn').style.display = 'inline';
+  });
+
+  document.getElementById('label-btn').addEventListener('click', async () => {
+    const prompt = document.getElementById('input-prompt').value;
+    const continuation = document.getElementById('model-prediction').value;
+    await fetch('/label', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt, continuation, toxic: true })
+    });
+    alert('Labeled as toxic');
+  });
+
+  document.getElementById('not-toxic-btn').addEventListener('click', async () => {
+    const prompt = document.getElementById('input-prompt').value;
+    const continuation = document.getElementById('model-prediction').value;
+    await fetch('/label', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt, continuation, toxic: false })
+    });
+    alert('Labeled as not toxic');
+  });
+</script>
 
 </body>
 </html>
-
