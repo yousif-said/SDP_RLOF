@@ -1,0 +1,19 @@
+{"time":"2024-11-24T17:13:08.421698-05:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-11-24T17:13:08.4218064-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\ryanp\\OneDrive - University of Connecticut\\Documents\\[0] SDP\\SDP_RLOF\\wandb\\run-20241124_171308-yqpa56vr\\logs\\debug-core.log"}
+{"time":"2024-11-24T17:13:08.4594786-05:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-11-24T17:13:08.4773552-05:00","level":"INFO","msg":"created new stream","id":"yqpa56vr"}
+{"time":"2024-11-24T17:13:08.4773552-05:00","level":"INFO","msg":"stream: started","id":"yqpa56vr"}
+{"time":"2024-11-24T17:13:08.4773552-05:00","level":"INFO","msg":"sender: started","stream_id":{"value":"yqpa56vr"}}
+{"time":"2024-11-24T17:13:08.4778709-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"yqpa56vr"}}
+{"time":"2024-11-24T17:13:08.4778709-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"yqpa56vr"}}
+{"time":"2024-11-24T17:13:08.7936926-05:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-11-24T17:13:08.7952711-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T17:13:10.5793477-05:00","level":"INFO","msg":"stream: closing","id":"yqpa56vr"}
+{"time":"2024-11-24T17:13:10.5793477-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T17:13:15.5803457-05:00","level":"ERROR","msg":"monitor: gpu: timeout waiting for process to exit"}
+{"time":"2024-11-24T17:13:15.5821085-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T17:13:16.2033173-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T17:13:16.3840457-05:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"yqpa56vr"}}
+{"time":"2024-11-24T17:13:16.3840457-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"yqpa56vr"}}
+{"time":"2024-11-24T17:13:16.3840457-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"yqpa56vr"}}
+{"time":"2024-11-24T17:13:16.3843975-05:00","level":"INFO","msg":"stream: closed","id":"yqpa56vr"}

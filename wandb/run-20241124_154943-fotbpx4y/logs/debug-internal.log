@@ -1,0 +1,27 @@
+{"time":"2024-11-24T15:49:43.9454895-05:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-11-24T15:49:43.9460254-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\ryanp\\OneDrive - University of Connecticut\\Documents\\[0] SDP\\SDP_RLOF\\wandb\\run-20241124_154943-fotbpx4y\\logs\\debug-core.log"}
+{"time":"2024-11-24T15:49:43.9852368-05:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-11-24T15:49:44.381059-05:00","level":"INFO","msg":"created new stream","id":"fotbpx4y"}
+{"time":"2024-11-24T15:49:44.381059-05:00","level":"INFO","msg":"stream: started","id":"fotbpx4y"}
+{"time":"2024-11-24T15:49:44.381059-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"fotbpx4y"}}
+{"time":"2024-11-24T15:49:44.3815886-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"fotbpx4y"}}
+{"time":"2024-11-24T15:49:44.3815886-05:00","level":"INFO","msg":"sender: started","stream_id":{"value":"fotbpx4y"}}
+{"time":"2024-11-24T15:49:44.6681892-05:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-11-24T15:49:44.6702925-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T15:49:45.8341294-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T15:50:23.1299208-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T15:50:23.1336683-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T15:50:35.5943907-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T15:50:37.5716645-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T15:51:26.0595284-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T15:51:29.0188368-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T15:53:17.1965153-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T15:53:20.6902523-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T16:03:56.6411599-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T16:04:00.464927-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T16:04:37.1901905-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T16:04:39.0733812-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T16:05:20.145796-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T16:05:21.2425944-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T16:07:02.6859113-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T16:07:05.1902362-05:00","level":"INFO","msg":"Pausing system monitor"}

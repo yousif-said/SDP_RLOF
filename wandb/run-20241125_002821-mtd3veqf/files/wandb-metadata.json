@@ -1,0 +1,43 @@
+{
+  "os": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.7",
+  "startedAt": "2024-11-25T05:28:22.004811Z",
+  "program": "C:\\Users\\ryanp\\OneDrive - University of Connecticut\\Documents\\[0] SDP\\SDP_RLOF\\RLHF.py",
+  "codePath": "RLHF.py",
+  "git": {
+    "remote": "https://github.com/yousif-said/SDP_RLOF.git",
+    "commit": "41895a0d8f02071c39fdf24d02c8b9917ed0bab2"
+  },
+  "email": "ryanplagasse@gmail.com",
+  "root": "C:\\Users\\ryanp\\OneDrive - University of Connecticut\\Documents\\[0] SDP\\SDP_RLOF",
+  "host": "Ryan-22",
+  "username": "ryanp",
+  "executable": "C:\\Users\\ryanp\\anaconda3\\envs\\prism\\python.exe",
+  "codePathLocal": "RLHF.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "[NVIDIA GeForce RTX 3050 Ti Laptop GPU]",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "490724126720",
+      "used": "454442098688"
+    }
+  },
+  "memory": {
+    "total": "16886083584"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+      "memoryTotal": "4294967296",
+      "cudaCores": 2560,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.5"
+}

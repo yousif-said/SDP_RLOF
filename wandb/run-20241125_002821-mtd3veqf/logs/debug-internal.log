@@ -1,0 +1,19 @@
+{"time":"2024-11-25T00:28:22.0093281-05:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-11-25T00:28:22.0093281-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\ryanp\\OneDrive - University of Connecticut\\Documents\\[0] SDP\\SDP_RLOF\\wandb\\run-20241125_002821-mtd3veqf\\logs\\debug-core.log"}
+{"time":"2024-11-25T00:28:22.0120599-05:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-11-25T00:28:22.0365472-05:00","level":"INFO","msg":"created new stream","id":"mtd3veqf"}
+{"time":"2024-11-25T00:28:22.0365472-05:00","level":"INFO","msg":"stream: started","id":"mtd3veqf"}
+{"time":"2024-11-25T00:28:22.0365472-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"mtd3veqf"}}
+{"time":"2024-11-25T00:28:22.0370519-05:00","level":"INFO","msg":"sender: started","stream_id":{"value":"mtd3veqf"}}
+{"time":"2024-11-25T00:28:22.0365472-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"mtd3veqf"}}
+{"time":"2024-11-25T00:28:22.4111767-05:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-11-25T00:28:22.4127841-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T00:28:24.577684-05:00","level":"INFO","msg":"stream: closing","id":"mtd3veqf"}
+{"time":"2024-11-25T00:28:24.5787196-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T00:28:29.5794461-05:00","level":"ERROR","msg":"monitor: gpu: timeout waiting for process to exit"}
+{"time":"2024-11-25T00:28:29.665986-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-25T00:28:30.4404179-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-25T00:28:30.6199452-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"mtd3veqf"}}
+{"time":"2024-11-25T00:28:30.6199452-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"mtd3veqf"}}
+{"time":"2024-11-25T00:28:30.6199452-05:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"mtd3veqf"}}
+{"time":"2024-11-25T00:28:30.6200587-05:00","level":"INFO","msg":"stream: closed","id":"mtd3veqf"}

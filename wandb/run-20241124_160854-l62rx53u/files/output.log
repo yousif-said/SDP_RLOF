@@ -1,0 +1,21 @@
+  0%|                                                                                                                                           | 0/3 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "C:\Users\ryanp\OneDrive - University of Connecticut\Documents\[0] SDP\SDP_RLOF\RLHF.py", line 73, in <module>
+    trainer.train()
+  File "C:\Users\ryanp\anaconda3\envs\prism\Lib\site-packages\transformers\trainer.py", line 1859, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryanp\anaconda3\envs\prism\Lib\site-packages\transformers\trainer.py", line 2203, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryanp\anaconda3\envs\prism\Lib\site-packages\transformers\trainer.py", line 3147, in training_step
+    self.accelerator.backward(loss)
+  File "C:\Users\ryanp\anaconda3\envs\prism\Lib\site-packages\accelerate\accelerator.py", line 2246, in backward
+    loss.backward(**kwargs)
+  File "C:\Users\ryanp\anaconda3\envs\prism\Lib\site-packages\torch\_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "C:\Users\ryanp\anaconda3\envs\prism\Lib\site-packages\torch\autograd\__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "C:\Users\ryanp\anaconda3\envs\prism\Lib\site-packages\torch\autograd\graph.py", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Found dtype Long but expected Float
