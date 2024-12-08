@@ -1,0 +1,132 @@
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/transformers/optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 1/500 [00:00<05:16,  1.57it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 500/500 [00:29<00:00, 17.02it/s]
+/home/rpl20001/anaconda3/envs/rlof/compiler_compat/ld: cannot find -laio: No such file or directory
+collect2: error: ld returned 1 exit status
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/deepspeed/runtime/zero/linear.py:47: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @autocast_custom_fwd
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/deepspeed/runtime/zero/linear.py:66: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @autocast_custom_bwd
+Epoch 0 complete.
+[2024-12-07 17:27:01,160] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [39m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [39m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [39m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [39m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [39m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.4
+[93m [WARNING] [39m using untested triton version (3.0.0), only 1.0.0 is known to be compatible
+Reward model training complete and saved at ./reward_model
+Holdout Accuracy on Anthropic HH [1000:1500]: 0.6400
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/transformers/optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/1 [00:00<?, ?it/s]
+Epoch 0, Loss: 0.8347
+Epoch 0, Loss: 1.1803
+Epoch 0, Loss: 0.4309
+Epoch 0, Loss: 1.1654
+Epoch 0, Loss: 0.5904
+Epoch 0, Loss: 1.1047
+Epoch 0, Loss: 0.6085
+Epoch 0, Loss: 0.8166
+Epoch 0, Loss: 0.6481
+Epoch 0, Loss: 0.7859
+Epoch 0, Loss: 0.6756
+Epoch 0, Loss: 0.6962
+Epoch 0, Loss: 0.9579
+Epoch 0, Loss: 0.8955
+Epoch 0, Loss: 0.9277
+Epoch 0, Loss: 0.7920
+Epoch 0, Loss: 0.3911
+Epoch 0, Loss: 0.8676
+Epoch 0, Loss: 0.7921
+Epoch 0, Loss: 1.0370
+Epoch 0, Loss: 1.0781
+Epoch 0, Loss: 0.2743
+Epoch 0, Loss: 0.7559
+Epoch 0, Loss: 0.5663
+Epoch 0, Loss: 0.8347
+Epoch 0, Loss: 0.7145
+Epoch 0, Loss: 0.6439
+Epoch 0, Loss: 1.2184
+Epoch 0, Loss: 1.1544
+Epoch 0, Loss: 0.5892
+Epoch 0, Loss: 0.6466
+Epoch 0, Loss: 0.7608
+Epoch 0, Loss: 0.7064
+Epoch 0, Loss: 0.9805
+Epoch 0, Loss: 0.5683
+Epoch 0, Loss: 0.7364
+Epoch 0, Loss: 0.6332
+Epoch 0, Loss: 0.9763
+Epoch 0, Loss: 1.5055
+Epoch 0, Loss: 0.7520
+Epoch 0, Loss: 0.8326
+Epoch 0, Loss: 1.1281
+Epoch 0, Loss: 0.7039
+Epoch 0, Loss: 0.5526
+Epoch 0, Loss: 0.7740
+Epoch 0, Loss: 0.7660
+Epoch 0, Loss: 0.7686
+Epoch 0, Loss: 1.2836
+Epoch 0, Loss: 0.2834
+Epoch 0, Loss: 0.9313
+Epoch 0, Loss: 0.9449
+Epoch 0, Loss: 0.8917
+Epoch 0, Loss: 0.8619
+Epoch 0, Loss: 0.5053
+Epoch 0, Loss: 1.0231
+Epoch 0, Loss: 0.6047
+Epoch 0, Loss: 0.7123
+Epoch 0, Loss: 0.9575
+Epoch 0, Loss: 0.7544
+Epoch 0, Loss: 0.5462
+Epoch 0, Loss: 0.7319
+Epoch 0, Loss: 0.5792
+Epoch 0, Loss: 0.6529
+Epoch 0, Loss: 0.6039
+Epoch 0, Loss: 0.9980
+Epoch 0, Loss: 0.5484
+Epoch 0, Loss: 0.7336
+Epoch 0, Loss: 1.0267
+Epoch 0, Loss: 0.8785
+Epoch 0, Loss: 0.9210
+Epoch 0, Loss: 0.5987
+Epoch 0, Loss: 0.9755
+Epoch 0, Loss: 1.1262
+
+  0%|          | 0/1 [00:04<?, ?it/s]
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Holdout Accuracy on Anthropic HH [1000:1500]: 0.5900

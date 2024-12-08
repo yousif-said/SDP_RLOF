@@ -1,0 +1,32 @@
+/home/rpl20001/anaconda3/envs/rlof/lib/python3.11/site-packages/transformers/optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  6%|▌         | 28/500 [00:01<00:27, 17.12it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 500/500 [00:29<00:00, 17.14it/s]
+Epoch 0 complete. Average Loss: 0.7257512549161911
+Reward model training complete and saved at ./reward_model
+Holdout Accuracy on Anthropic HH [1000:1500]: 0.6820
